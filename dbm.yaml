@@ -1,0 +1,23 @@
+project: personal-trainer
+
+database:
+  driver: postgres
+  version: 17
+
+  connection:
+    host: ${DB_HOST}
+    port: 5432
+    database: general_projects
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
+
+  schema: personal_trainer
+
+migrations:
+  path: ./migrations
+
+data:
+  path: ./data
+
+seeds:
+  path: ./seeds
